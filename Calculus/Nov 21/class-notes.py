@@ -90,3 +90,27 @@
 # 5. If a < b < c, then the definite integral of f(x) * dx from a to c is equal to the definite integral of f(x) * dx from a to b + the definite integral of f(x) * dx from b to c
 # ---WHY?---
 # Area from a to c is the sum of the area from a to b and b to c
+
+# Theorem 3:
+# if f(x) is continuous or has a finite of discontinuities (none of which are infinite discontinuities) then f is integrable on [a,b]
+# i.e. the definite integral of f(x) * dx from a to b exists
+
+# Example 4
+# If f(x) = piecewise function defined as follows:
+# ... -4 for x < 2
+# ... x for 2 <= x < 5
+# ... -3 for x >= 5
+# Find the definite integral of f(x) * dx from 0 to 6
+# Use property 5 to split the integral 
+
+# The definite integral of f(x) * dx from 0 to 6 is equal to the definite integral of f(x) * dx from 0 to 2 + the definite integral of f(x) * dx from 2 to 5 + the definite integral of f(x) * dx from 5 to 6
+# The definite integral of f(-4) * dx from 0 to 2 + the definite integral of f(x) * dx from 2 to 5 + the definite integral of f(-3) * dx from 5 to 6
+# = (-4) * (2 - 0) + the definite integral of f(x) * dx from 2 to 5 + (-3) * (6 - 5)
+# The definite integral of f(x) * dx from 0 to 2 is equal to -4 * 2 = -8
+# The definite integral of f(x) * dx from 2 to 5 is equal to 1/2 * 5^2 - 1/2 * 2^2 = 11.5
+# The definite integral of f(x) * dx from 5 to 6 is equal to -3 * 1 = -3
+
+# Find the definite integral of f(x) * dx from 2 to 5
+# Graph f(x) = x from 2 to 5
+# Area is 1/2 * base * height
+# A = 1/2 * 3 * 3 = 4.5
