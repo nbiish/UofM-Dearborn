@@ -1,6 +1,10 @@
+############################################################################################################
 ## RULE: Deeply explain each step of the calculus problems and notes that follow
-## RULE: Keep notation as fractions as much as possible
-# Sectio 5.1 (cont)
+## RULE: Keep notation as fractions as much as possible or provide both decimal and fraction
+############################################################################################################
+
+
+# Section 5.1 (cont)
 #Sigma Notation
 
 # Example 1
@@ -114,3 +118,47 @@
 # Graph f(x) = x from 2 to 5
 # Area is 1/2 * base * height
 # A = 1/2 * 3 * 3 = 4.5
+# 3 * 2 = 6
+# (9/2) + 6 = 21/2 = 10.5
+# So the definite integral of f(x) * dx from 2 to 5 is 10.5 or 21/2
+# So the definite integral of f(x) * dx from 0 to 6 is -8 + 10.5 - 3 = -0.5 or -1/2
+
+# Example 5
+# If f(x) = piecewise function defined as follows:
+# ... -4 for x < 2
+# ... x for 2 <= x < 5
+# ... -3 for x >= 5
+# Redo using area by first graphing the function
+
+# For x < 2, f(x) = -4 (horizontal line, height = 4)
+### PROVIDE DESMOS INPUT HERE ###
+# For x >= 5, f(x) = -3 (horizontal line, height = 3)
+### PROVIDE DESMOS INPUT HERE ###
+# For 2 <= x < 5, f(x) = x (line with slope 1, y-intercept 2)
+### PROVIDE DESMOS INPUT HERE ###
+# Use net area  for the definite integral of f(x) * dx from 0 to 6 is equal to A__1 - A__2
+# A__1 = area above x-axis --- area of trapazoid = 21/2 or 10.5
+# A__2 = area below x-axis --- two regions, first has area 2 * 4 = 8, second has area 1 * 3 = 3
+# So A__2 = 8 + 3 = 11
+# So A__1 - A__2 = 10.5 - 11 = -0.5
+# Same as before
+
+# Example 6
+# Given the graph of f,
+### PROVIDE DESMOS INPUT HERE ###
+### semi circle from 1 to 5 in the fourth quadrant of a cartesian plane
+
+# Find the definite integral of 7f(x) * dx from 1 to 5
+# Area is 7 times the area of the definite integral of f(x) * dx from 1 to 5
+# Area of semi-circle = 1/2 * pi * r^2 = 1/2 * pi * 2^2 = 2pi
+# Using property 3, the definite integral of 7f(x) * dx from 1 to 5 is equal to 7 times the definite integral of f(x) * dx from 1 to 5
+# = 7 * 2pi = 14pi
+# Since region is below the x-axis, the area is A__2 = -14pi
+# A__1 = 0 since no area above the x-axis
+# So the definite integral of 7f(x) * dx from 1 to 5 is equal to 7 * (0-2pi) = -14pi
+
+# What if it was definite integral of 7 + f(x) * dx from 1 to 5
+# = definite integral of 7 * dx from 1 to 5 + definite integral of f(x) * dx from 1 to 5
+# = 7 * (5 - 1) + 2pi = 28 - 2pi
+
+# Quiz 4.3, 4.4, 4.7 
