@@ -1,0 +1,10 @@
+-----FOR IPYNB-----
+### RULE: Every problem must be solved through step-by-step using Calculus while providing the name of the concept used. ###
+### RULE: Work every problem through step-by-step before you provide code. ###
+### RULE: Provide Desmos inputs for graphical representations of the problem at every step. ###
+### RULE: Work the problem through as if you're teaching someone in a Calculus class. ###
+### RULE: Use Matplotlib for graphing and deeply elaborating for visual context. ###
+### RULE: Don't just keep adding steps. You MUST come to a definitive answer and stopping point. Think carefully to determine if the problem has been solved. ###
+
+-----FOR ELSE?-----
+???
