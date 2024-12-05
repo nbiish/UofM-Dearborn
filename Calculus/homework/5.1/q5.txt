@@ -1,0 +1,95 @@
+**Given:**
+
+- Function: \( f(x) = \cos(x) \)
+- Interval: \( 0 \leq x \leq \frac{3\pi}{2} \)
+- Number of subintervals: \( n = 6 \)
+
+**Step 1: Calculate \( \Delta x \)**
+
+\[
+\Delta x = \frac{b - a}{n} = \frac{\frac{3\pi}{2} - 0}{6} = \frac{3\pi}{12} = \frac{\pi}{4}
+\]
+
+**Step 2: Left Endpoint Riemann Sum (\( L_6 \))**
+
+The left endpoints are \( x_0 = 0, x_1 = \frac{\pi}{4}, x_2 = \frac{\pi}{2}, x_3 = \frac{3\pi}{4}, x_4 = \pi, x_5 = \frac{5\pi}{4} \).
+
+Evaluate \( f(x) = \cos(x) \) at these points:
+
+\[
+\begin{align*}
+f(0) &= 1 \\
+f\left(\frac{\pi}{4}\right) &= \frac{\sqrt{2}}{2} \\
+f\left(\frac{\pi}{2}\right) &= 0 \\
+f\left(\frac{3\pi}{4}\right) &= -\frac{\sqrt{2}}{2} \\
+f(\pi) &= -1 \\
+f\left(\frac{5\pi}{4}\right) &= -\frac{\sqrt{2}}{2}
+\end{align*}
+\]
+
+Sum these values:
+
+\[
+1 + \frac{\sqrt{2}}{2} + 0 - \frac{\sqrt{2}}{2} - 1 - \frac{\sqrt{2}}{2} = -\frac{\sqrt{2}}{2}
+\]
+
+Thus, the left Riemann sum is:
+
+\[
+L_6 = \Delta x \times \left(-\frac{\sqrt{2}}{2}\right) = \frac{\pi}{4} \times \left(-\frac{\sqrt{2}}{2}\right) = -\frac{\pi \sqrt{2}}{8}
+\]
+
+Numerically:
+
+\[
+L_6 \approx -0.555
+\]
+
+**Step 3: Right Endpoint Riemann Sum (\( R_6 \))**
+
+The right endpoints are \( x_1 = \frac{\pi}{4}, x_2 = \frac{\pi}{2}, x_3 = \frac{3\pi}{4}, x_4 = \pi, x_5 = \frac{5\pi}{4}, x_6 = \frac{3\pi}{2} \).
+
+Evaluate \( f(x) = \cos(x) \) at these points:
+
+\[
+\begin{align*}
+f\left(\frac{\pi}{4}\right) &= \frac{\sqrt{2}}{2} \\
+f\left(\frac{\pi}{2}\right) &= 0 \\
+f\left(\frac{3\pi}{4}\right) &= -\frac{\sqrt{2}}{2} \\
+f(\pi) &= -1 \\
+f\left(\frac{5\pi}{4}\right) &= -\frac{\sqrt{2}}{2} \\
+f\left(\frac{3\pi}{2}\right) &= 0
+\end{align*}
+\]
+
+Sum these values:
+
+\[
+\frac{\sqrt{2}}{2} + 0 - \frac{\sqrt{2}}{2} - 1 - \frac{\sqrt{2}}{2} + 0 = -1 - \frac{\sqrt{2}}{2}
+\]
+
+Thus, the right Riemann sum is:
+
+\[
+R_6 = \Delta x \times \left(-1 - \frac{\sqrt{2}}{2}\right) = \frac{\pi}{4} \times \left(-1 - \frac{\sqrt{2}}{2}\right) = -\frac{\pi}{4} - \frac{\pi \sqrt{2}}{8}
+\]
+
+Numerically:
+
+\[
+R_6 \approx -1.342
+\]
+
+**Final Answers:**
+
+1. Left endpoint Riemann sum:
+
+\[
+L_6 = -\frac{\pi \sqrt{2}}{8} \approx -0.555
+\]
+
+2. Right endpoint Riemann sum:
+
+\[
+R_6 = -\frac{\pi}{4} - \frac{\pi \sqrt{2}}{8} \approx -1.342
+\]

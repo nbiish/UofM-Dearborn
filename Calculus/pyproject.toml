@@ -1,9 +1,17 @@
 [project]
 name = "calculus"
 version = "0.1.0"
-description = "Add your description here"
+description = "Everything that's needed for calculus learning"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "ipywidgets>=8.1.5",
     "matplotlib>=3.9.3",
+    "sympy>=1.13.3",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.29.5",
+    "uv>=0.5.6",
 ]
