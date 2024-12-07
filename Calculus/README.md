@@ -27,6 +27,8 @@ To install dependencies and set up your environment:
 ```sh
 # Install uv if not already installed
 curl -LsSf https://astral.sh/uv/install.sh | sh
+# or
+brew install uv
 
 ```sh
 # Install dependencies
