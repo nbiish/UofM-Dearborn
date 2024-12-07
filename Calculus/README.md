@@ -28,14 +28,15 @@ To install dependencies and set up your environment:
 # Install uv if not already installed
 curl -LsSf https://astral.sh/uv/install.sh | sh
 
+```sh
+# Install dependencies
+uv add -r requirements.txt
+
 # Create and activate a new virtual environment
 uv venv
 source .venv/bin/activate  # On Unix/macOS
 # or
 .venv\Scripts\activate     # On Windows
-
-# Install dependencies
-uv pip sync requirements.txt
 ```
 
 Make sure you have Python 3.8 or higher installed on your system.
@@ -48,5 +49,5 @@ To run the Python scripts in the `quiz-studying` directory, navigate to the appr
 
 ```sh
 cd Calculus/quiz-studying/4.3
-python 4.3-Q1.py
+uv run 4.3-Q1.py
 ```
