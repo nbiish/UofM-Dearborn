@@ -1,0 +1,27 @@
+
+**Understanding Definite Integrals as Signed Areas**
+
+When we talk about definite integrals, we're essentially talking about the accumulation of a quantity. In this case, the quantity is the "signed area" between the curve of the function,  f(x), and the x-axis.  The "signed" part is crucial because it tells us whether the function contributes positively or negatively to the overall accumulation.
+
+* **Positive Contributions:** When the function lies *above* the x-axis, the area between the curve and the x-axis is considered positive.  Imagine it as accumulating a positive quantity.
+* **Negative Contributions:** When the function dips *below* the x-axis, the area between the curve and the x-axis is considered negative.  Think of this as taking away from the accumulated quantity.
+
+**Analyzing the Graph**
+
+Now, let's look at the graph with this in mind:
+
+* **A. ∫<sub>a</sub><sup>b</sup> f(x) dx = -11** 
+   The curve of f(x) lies entirely below the x-axis between the points 'a' and 'b'. This means the function is making a negative contribution.  The red shaded area represents this negative contribution, and since it has a magnitude of 11, the integral is -11.
+
+* **B. ∫<sub>b</sub><sup>c</sup> f(x) dx = 1**
+   Between points 'b' and 'c', the curve is above the x-axis.  This is a positive contribution, and the black shaded area quantifies this contribution with a value of 1.
+
+* **C. ∫<sub>a</sub><sup>c</sup> f(x) dx = -10**
+   This integral asks for the *net* accumulated area between points 'a' and 'c'.  We need to consider both the negative contribution from 'a' to 'b' (-11) and the positive contribution from 'b' to 'c' (+1). Adding these signed areas gives us -11 + 1 = -10.
+
+* **D. ∫<sub>a</sub><sup>c</sup> |f(x)| dx = 12**
+    The absolute value function, |f(x)|, effectively "flips" any parts of the graph that were below the x-axis to above the x-axis. This means we're now considering all areas as positive contributions.  Therefore, we simply add the magnitudes of the red and black areas: 11 + 1 = 12.
+
+**Key Takeaway**
+
+Definite integrals are not just about calculating areas; they are about understanding the *accumulated effect* of a function over an interval. The sign of the function plays a crucial role in determining whether the function is adding to or subtracting from the overall accumulation.
