@@ -7,18 +7,18 @@ Welcome to the Calculus repository for UofM-Dearborn Fall 2024. This repository 
 The repository is organized into the following directories:
 
 - **quiz-studying**: Contains Python scripts for solving calculus problems step-by-step, with detailed explanations and visualizations.
-    - `4.3/`: Problems related to section 4.3 of the course.
-        - `4.3-Q1.py`
-        - `4.3-Q4.py`
-        - `4.3-Q7.py`
-        - `4.3-Q8.py`
-
 - **in-class**: Contains notes and examples discussed during class sessions.
-    - `11-14-24/`: Notes from the class on November 14, 2024.
-    - `11-21-24/`: Notes from the class on November 21, 2024.
-
 - **homework**: Contains Jupyter notebooks and scripts for homework assignments.
-    - `4.7.ipynb`
+
+## Requirements
+
+- Python 3.13 or higher
+- Core dependencies:
+  - ipywidgets >=8.1.5
+  - matplotlib >=3.9.3
+  - numpy >=2.1.3
+  - scipy >=1.14.1
+  - sympy >=1.13.3
 
 ## Development Environment Setup
 
@@ -30,7 +30,6 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 # or
 brew install uv
 
-```sh
 # Install dependencies
 uv add -r requirements.txt
 
@@ -41,7 +40,7 @@ source .venv/bin/activate  # On Unix/macOS
 .venv\Scripts\activate     # On Windows
 ```
 
-Make sure you have Python 3.8 or higher installed on your system.
+Make sure you have Python 3.13 or higher installed on your system.
 
 ## Usage
 
@@ -52,4 +51,3 @@ To run the Python scripts in the `quiz-studying` directory, navigate to the appr
 ```sh
 cd Calculus/quiz-studying/4.3
 uv run 4.3-Q1.py
-```
