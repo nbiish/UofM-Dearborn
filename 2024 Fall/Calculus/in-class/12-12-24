@@ -1,0 +1,58 @@
+# Substitution Rule for Definite Integrals
+
+## If u = g(x), then
+## Definite Integral of f(g(x)) * g'(x) dx from a to b = Definite Integral of f(u) du from g(a) to g(b)
+
+### Example
+### Definite intergral of x * cos(x^2) dx from 0 to sqrt(pi/2)
+### Try u = x^2, then du = 2x dx, so x dx = 1/2 du
+
+### Rewrite as:
+### Definite integral of cos(x^2) * x dx from 0 to sqrt(pi/2)
+### = definite integral of cos(u) * 1/2 du from g(0) to g(sqrt(pi/2))
+### = 1/2 * definite integral of cos(u) du from 0 to pi/2 = 1/2 * sin(u) from 0 to pi/2
+### = 1/2 * (sin(pi/2) - sin(0)) <--- by the Fundamental Theorem of Calculus (FTC)
+### = 1/2 * (1 - 0)
+### = 1/2
+
+### Example
+### Evaluate the definite integral of (x/sqrt(1 + 2x)) dx from 1 to 3
+### Try u = 1 + 2x
+### So du - 2 dx
+### (du/2) = dx
+### Note:
+#### from u = 1 + 2x, 
+#### solve for x
+#### (u - 1)/2 = x
+#### definite integral of (x/sqrt(1 + 2x)) dx from 1 to 3
+#### = definite integral of (((u-1)/2) / sqrt(u))) * (du/2) from 1 to 3
+### = definite integral of ((u-1) / (2sqrt(u))) du from g(1) to g(3)
+### = 1/4 * definite integral of (u-1) / sqrt(u) du from 3 to 7
+### 1/4 * definite integral of (u - 1) / sqrt(u^(1/2)) du from 3 to 7
+### = 1/4 * definite integral of (u^(1/2) - u^(-1/2)) du from 3 to 7
+### = 1/4 * [2/3 * u^(3/2) - 2u^(1/2)] from 3 to 7
+### = 1/4 * [2/3 * 7^(3/2) - 2 * 7^(1/2) - (2/3 * 3^(3/2) - 2 * 3^(1/2))]
+### ~ 1.763834
+### NOTE:
+#### in lecture for 5.2. we **estimated** this definite integral using the midpoint rule and got. Rule with n = 4 rectangles
+### Hint:
+#### if intergrating a fraction, and derivative of its denominator is the numerator (except possibly for a constant multiple), ...
+#### ... then let = u = denominator
+
+### Example
+### Evaluate the definite integral of (2^q / 2^q + 3) dq
+### derivative of denominator is ...
+### d/dq * (2^q + 3) = 2^q * ln(2) 
+### NOTE: ln(2) is a constant multiple of 2^q
+### So let u = 2^q + 3
+### du = 2^q * ln(2) dq
+### Divide by ln(2)
+### du/ln(2) = 2^q dq
+### So definite integral of (2^q / 2^q + 3) * 2^q dq 
+#### 2^q + 3 = u, 2^q dq = du/ln(2)
+### = definite integral of (1/u) * (du/ln(2))
+### = 1/ln(2) * definite integral of 1/u du
+### = 1/ln(2) * ln(|u|) + C
+### = 1/ln(2) * ln(|2^q + 3|) + C
+#### ln(|2^q + 3|) is always positive
+### = 1/ln(2) * ln(2^q + 3) + C

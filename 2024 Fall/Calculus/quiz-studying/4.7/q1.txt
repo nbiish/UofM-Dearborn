@@ -1,0 +1,43 @@
+To solve this problem, we need to maximize the area of a rectangle that is enclosed by a fence on three sides (since one side is up against a wall). Let's break down the steps:
+
+### Step 1: Define the Variables
+- Let \( l \) be the length of the rectangle (the side parallel to the wall).
+- Let \( w \) be the width of the rectangle (the sides perpendicular to the wall).
+
+### Step 2: Set Up the Perimeter Equation
+Since the fence is only on three sides (two widths and one length), the perimeter equation is:
+\[ 2w + l = 40 \]
+
+### Step 3: Express the Length in Terms of the Width
+Solve the perimeter equation for \( l \):
+\[ l = 40 - 2w \]
+
+### Step 4: Write the Area Equation
+The area \( A \) of the rectangle is given by:
+\[ A = l \times w \]
+Substitute \( l \) from the previous step:
+\[ A = (40 - 2w) \times w \]
+\[ A = 40w - 2w^2 \]
+
+### Step 5: Maximize the Area
+To find the maximum area, we need to find the vertex of the quadratic function \( A = 40w - 2w^2 \). The general form of a quadratic function is \( ax^2 + bx + c \), and the vertex occurs at \( w = -\frac{b}{2a} \).
+
+Here, \( a = -2 \) and \( b = 40 \), so:
+\[ w = -\frac{40}{2(-2)} \]
+\[ w = \frac{40}{4} \]
+\[ w = 10 \]
+
+### Step 6: Find the Corresponding Length
+Substitute \( w = 10 \) back into the equation for \( l \):
+\[ l = 40 - 2(10) \]
+\[ l = 40 - 20 \]
+\[ l = 20 \]
+
+### Step 7: Calculate the Maximum Area
+Now, calculate the area with \( l = 20 \) and \( w = 10 \):
+\[ A = l \times w \]
+\[ A = 20 \times 10 \]
+\[ A = 200 \]
+
+### Final Answer
+The largest area you can enclose with 40 meters of fencing is **200 square meters**.
