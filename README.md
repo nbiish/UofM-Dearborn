@@ -1,28 +1,35 @@
-# Calculus Study and In-Class Notes
+# UofM-Dearborn Course Notes
 
-Welcome to the Calculus repository for UofM-Dearborn Fall 2024. This repository contains study materials, in-class notes, and homework assignments to help you succeed in your Calculus course.
+Welcome to my UofM-Dearborn coursework repository. This repository contains course materials, lecture notes, and study materials organized by semester and subject.
 
 ## Repository Structure
 
-The repository is organized into the following directories:
+The repository is organized by semester and course:
 
-- **quiz-studying**: Contains Python scripts for solving calculus problems step-by-step, with detailed explanations and visualizations.
-- **in-class**: Contains notes and examples discussed during class sessions.
-- **homework**: Contains Jupyter notebooks and scripts for homework assignments.
+- **2024 Fall**
+  - **Calculus**
+    - `in-class/`: Detailed lecture notes and examples
+    - `uv.lock`: Dependency lock file
+  
+- **2025 Winter**
+  - **Historical Geology**
+    - `lecture/`: Weekly lecture notes and materials
 
 ## Requirements
 
-- Python 3.13 or higher
-- Core dependencies:
-  - ipywidgets >=8.1.5
-  - matplotlib >=3.9.3
-  - numpy >=2.1.3
-  - scipy >=1.14.1
-  - sympy >=1.13.3
+### Calculus Course
 
-## Development Environment Setup
+Core Python dependencies:
+- matplotlib >=3.9.3
+- numpy >=2.1.3
+- scipy >=1.14.1
+- sympy >=1.13.3
+- ipywidgets >=8.1.5
+- ipykernel (dev dependency)
 
-To install dependencies and set up your environment:
+### Development Setup
+
+The project uses `uv` for Python dependency management with dependencies specified in `uv.lock`:
 
 ```sh
 # Install uv if not already installed
@@ -30,24 +37,30 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 # or
 brew install uv
 
-# Install dependencies
-uv add -r requirements.txt
-
-# Create and activate a new virtual environment
+# Create and activate virtual environment
 uv venv
 source .venv/bin/activate  # On Unix/macOS
 # or
 .venv\Scripts\activate     # On Windows
+
+# Install dependencies from uv.lock
+uv pip sync
 ```
 
-Make sure you have Python 3.13 or higher installed on your system.
+## Course Materials
 
-## Usage
+### Calculus
 
-### Running Python Scripts
+The Calculus materials include detailed examples and explanations for topics like:
+- Antiderivatives and integration
+- Power rule applications
+- Exponential and trigonometric functions
+- Initial value problems
 
-To run the Python scripts in the `quiz-studying` directory, navigate to the appropriate folder and execute the script using Python:
+### Historical Geology
 
-```sh
-cd Calculus/quiz-studying/4.3
-uv run 4.3-Q1.py
+Weekly lecture notes covering:
+- Earth's geological history
+- Plate tectonics
+- Formation of the universe
+- Geological principles and theories
